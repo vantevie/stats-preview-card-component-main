@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .card {
+    width: 88%;
+    max-width: 450px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background-color: $card-background;
+    border-radius: 1rem;
+
+    .head-img {
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      background: $accent;
+      mix-blend-mode: screen;
+    }
+
+    .title {
+      font-family: "Inter", sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: $main-heading-stats;
+      padding: 1.6rem 2rem;
+      text-align: center;
+
+      span {
+        color: $accent;
+      }
+    }
+    .content {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $main-paragraph;
+      padding: 0 3rem;
+      text-align: center;
+    }
+    .stats {
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
