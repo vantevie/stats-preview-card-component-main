@@ -2,50 +2,97 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 7.5rem;
+  flex-direction: column;
 
   .card {
     width: 88%;
     max-width: 450px;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem auto;
     background-color: $card-background;
     border-radius: 1rem;
+    text-align: center;
 
     .head-img {
       width: 100%;
+      height: 250px;
+      background-image: url(/images/image-header-mobile.jpg);
+      background-size: cover;
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
-      background: $accent;
-      mix-blend-mode: screen;
+      background-color: $accent;
+      filter: contrast(50%) brightness(180%);
+      mix-blend-mode: overlay;
+    }
+
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 1em 1em 3rem 1em;
     }
 
     .title {
       font-family: $title-font;
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: $main-heading-stats;
-      padding: 1.6rem 2rem;
       text-align: center;
-
       span {
         color: $accent;
       }
     }
     .content {
-      font-family: $main-font;
-      font-size: 1.5rem;
+      font-family: $title-font;
+      font-size: 1.2rem;
       font-weight: 400;
       color: $main-paragraph;
-      padding: 0 3rem;
+      padding: 0.5rem 0.5rem;
       text-align: center;
+      line-height: 2.1rem;
+      margin-bottom: 0.5rem;
     }
     .stats {
       font-family: "Inter", sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
+      margin: 0.8rem 0;
+      padding: 1.6rem 1.2rem;
+      .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .stat-num {
+          font-family: $title-font;
+          font-size: 2rem;
+          font-weight: 700;
+          color: $main-heading-stats;
+          margin-bottom: 0.5rem;
+        }
+
+        .stat-text {
+          font-family: $main-font;
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          color: rgba(white, 0.5);
+          letter-spacing: 0.5px;
+          margin-bottom: 2rem;
+        }
+        footer {
+          font-family: $title-font;
+          display: flex;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          align-items: center;
+        }
+      }
     }
   }
 }
