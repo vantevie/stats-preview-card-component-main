@@ -14,7 +14,7 @@
     margin: 0 auto;
 
     .hero-image {
-      background: url(../../images/image-header-mobile.jpg);
+      background: url(./../images/image-header-mobile.jpg);
       background-blend-mode: multiply;
       background-color: $accent;
       filter: opacity(50%) brightness(180%);
