@@ -15,8 +15,9 @@
 
     .hero-image {
       background: url(/images/image-header-mobile.jpg);
-      background-color: $overlay;
-      mix-blend-mode: soft-light;
+      background-blend-mode: multiply;
+      background-color: $accent;
+      filter: opacity(50%) brightness(180%);
       background-size: cover;
       width: 100%;
       height: rem(300);

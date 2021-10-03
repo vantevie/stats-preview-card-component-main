@@ -21,7 +21,7 @@ package-lock.json
 package.json
 
 # source files
-/app
+
 /design
 README-template.md
 style-guide.md
