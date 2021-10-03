@@ -1,0 +1,60 @@
+@media screen and (min-width: 480px) {
+  .container {
+    padding: rem(176);
+    .card {
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      .hero-image {
+        background: url(/images/image-header-desktop.jpg);
+        background-blend-mode: multiply;
+        background-color: $accent;
+        filter: opacity(50%) brightness(180%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: rem(478);
+        border-top-left-radius: unset;
+        border-bottom-right-radius: rem(10);
+      }
+
+      .text-wrapper {
+        margin: 0;
+        padding-right: rem(120);
+        padding-left: rem(70);
+        padding-top: rem(60);
+        padding-bottom: rem(60);
+        h1 {
+          text-align: left;
+        }
+        p {
+          margin-top: rem(40);
+          text-align: left;
+          padding: 0;
+        }
+      }
+      .stats {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        margin-right: rem(144);
+        margin-top: rem(65);
+        padding-bottom: 0;
+        .info {
+          h3 {
+            padding-left: 0;
+            padding-right: rem(14);
+          }
+          p {
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

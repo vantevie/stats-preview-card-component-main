@@ -2,95 +2,76 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  padding: 2em;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 7.5rem;
-  flex-direction: column;
 
   .card {
-    width: 88%;
-    max-width: 450px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 2.5rem auto;
     background-color: $card-background;
-    border-radius: 1rem;
-    text-align: center;
+    border-radius: rem(10);
+    margin: 0 auto;
 
-    .head-img {
-      width: 100%;
-      height: 250px;
-      background-image: url(/images/image-header-mobile.jpg);
-      background-size: cover;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem;
+    .hero-image {
+      background: url(/images/image-header-mobile.jpg);
+      background-blend-mode: multiply;
       background-color: $accent;
-      filter: contrast(50%) brightness(180%);
-      mix-blend-mode: overlay;
+      filter: opacity(50%) brightness(180%);
+      background-size: cover;
+      width: 100%;
+      height: rem(300);
+      border-top-left-radius: rem(10);
+      border-top-right-radius: rem(10);
     }
 
-    .card-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      padding: 1em 1em 3rem 1em;
-    }
+    .text-wrapper {
+      margin: rem(44) auto;
+      padding: 0 rem(28);
+      h1 {
+        font-family: $title-font;
+        font-weight: $bold;
+        color: $main-heading-stats;
+        text-align: center;
+        padding: rem(19) rem(32);
 
-    .title {
-      font-family: $title-font;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: $main-heading-stats;
-      text-align: center;
-      span {
-        color: $accent;
+        span {
+          color: $accent;
+        }
+      }
+      p {
+        font-family: $main-font;
+        font-weight: $normal;
+        color: $main-paragraph;
+        font-size: rem(16);
+        text-align: center;
+        padding: 0 rem(32);
+        line-height: rem(30);
       }
     }
-    .content {
-      font-family: $title-font;
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: $main-paragraph;
-      padding: 0.5rem 0.5rem;
-      text-align: center;
-      line-height: 2.1rem;
-      margin-bottom: 0.5rem;
-    }
     .stats {
-      font-family: "Inter", sans-serif;
-      width: 100%;
-      margin: 0.8rem 0;
-      padding: 1.6rem 1.2rem;
-      .stat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      line-height: 1;
+      padding-bottom: rem(32);
 
-        .stat-num {
+      .info {
+        h3 {
           font-family: $title-font;
-          font-size: 2rem;
-          font-weight: 700;
+          font-weight: $bold;
+          font-size: rem(27);
           color: $main-heading-stats;
-          margin-bottom: 0.5rem;
+          padding: rem(14);
         }
-
-        .stat-text {
+        p {
           font-family: $main-font;
+          font-weight: $normal;
+          color: $stat-headings;
           text-transform: uppercase;
-          font-size: 1.1rem;
-          color: rgba(white, 0.5);
-          letter-spacing: 0.5px;
-          margin-bottom: 2rem;
-        }
-        footer {
-          font-family: $title-font;
-          display: flex;
-          padding-bottom: 0;
-          margin-bottom: 0;
-          align-items: center;
+          letter-spacing: rem(0.2);
+          margin-bottom: rem(32);
         }
       }
     }
