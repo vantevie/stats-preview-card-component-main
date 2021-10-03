@@ -117,7 +117,7 @@ footer a:hover {
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 11rem;
   }
