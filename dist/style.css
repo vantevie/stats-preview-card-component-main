@@ -1,3 +1,4 @@
+@use "sass:math";
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -24,10 +25,12 @@ footer {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
 }
+
 footer a {
   text-decoration: none;
   color: #aa5cdb;
 }
+
 footer a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -39,6 +42,7 @@ footer a:hover {
   padding: 2em;
   align-items: center;
 }
+
 .container .card {
   width: 100%;
   display: flex;
@@ -47,8 +51,9 @@ footer a:hover {
   border-radius: 0.625rem;
   margin: 0 auto;
 }
+
 .container .card .hero-image {
-  background: url(/image-header-mobile.15c45114.jpg);
+  background: url(/images/image-header-mobile.jpg);
   background-blend-mode: multiply;
   background-color: #aa5cdb;
   filter: opacity(50%) brightness(180%);
@@ -58,10 +63,12 @@ footer a:hover {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
+
 .container .card .text-wrapper {
   margin: 2.75rem auto;
   padding: 0 1.75rem;
 }
+
 .container .card .text-wrapper h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -69,9 +76,11 @@ footer a:hover {
   text-align: center;
   padding: 1.1875rem 2rem;
 }
+
 .container .card .text-wrapper h1 span {
   color: #aa5cdb;
 }
+
 .container .card .text-wrapper p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
@@ -81,6 +90,7 @@ footer a:hover {
   padding: 0 2rem;
   line-height: 1.875rem;
 }
+
 .container .card .stats {
   display: flex;
   flex-direction: column;
@@ -89,6 +99,7 @@ footer a:hover {
   line-height: 1;
   padding-bottom: 2rem;
 }
+
 .container .card .stats .info h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -96,6 +107,7 @@ footer a:hover {
   color: white;
   padding: 0.875rem;
 }
+
 .container .card .stats .info p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
@@ -118,7 +130,7 @@ footer a:hover {
     padding: 0;
   }
   .container .card .hero-image {
-    background: url(/image-header-desktop.d49a0c3b.jpg);
+    background: url(/images/image-header-desktop.jpg);
     background-blend-mode: multiply;
     background-color: #aa5cdb;
     filter: opacity(50%) brightness(180%);
@@ -138,6 +150,7 @@ footer a:hover {
   }
   .container .card .text-wrapper h1 {
     text-align: left;
+    padding: 0;
   }
   .container .card .text-wrapper p {
     margin-top: 2.5rem;
@@ -162,5 +175,4 @@ footer a:hover {
     margin: 0;
   }
 }
-
-/*# sourceMappingURL=/style.fdc6237f.css.map */
+/*# sourceMappingURL=style.css.map */
